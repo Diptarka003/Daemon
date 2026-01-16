@@ -15,7 +15,7 @@ import {prisma} from "../../../lib/prisma.js";
 
 dotenv.config();
 
-const DEMO_URL = "http://localhost:8000";
+const DEMO_URL = process.env.BETTER_AUTH_URL;
 const CLIENT_ID = process.env.GITHUB_CLIENT_ID;
 const CONFIG_DIR = path.join(os.homedir(), ".better-auth");
 const TOKEN_FILE = path.join(CONFIG_DIR, "token.json");
