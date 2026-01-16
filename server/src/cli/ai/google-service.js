@@ -1,9 +1,9 @@
-import { config } from "../../config/google.config";
+import { config } from "../../config/google.config.js";
 import chalk from "chalk"
-import google from "@ai-sdk/google"
+import {google} from "@ai-sdk/google"
 import {streamText} from "ai"
 
-export class AIservice{
+export class AIService{
     constructor(){
         if(!config.googleApiKey)
         {

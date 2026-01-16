@@ -5,7 +5,7 @@ import {Command} from "commander"
 import figlet from "figlet"
 import chalk from "chalk"
 dotenv.config()
-import { login } from "./commands/auth/login.js"
+import { login, whoami, logout } from "./commands/auth/login.js"
 import { wakeUp } from "./commands/ai/wakeUp.js"
 
 async function main(){
@@ -25,6 +25,8 @@ async function main(){
    .description("A Cli based AI tool")
    .addCommand(login)
    .addCommand(wakeUp)
+   .addCommand(logout)
+   .addCommand(whoami)
    program.action(()=>{
     program.help()
    })

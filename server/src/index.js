@@ -19,7 +19,10 @@ app.all('/api/auth/*splat', toNodeHandler(auth));
 // or only apply it to routes that don't interact with Better Auth
 app.use(express.json());
 
-
+app.get("/device", async (req, res) => {
+  const { user_code } = req.query; // Fixed: should be req.query, not req.params
+  res.redirect(`http://localhost:3000/device?user_code=${user_code}`);
+});
 app.listen(process.env.PORT, () => {
     console.log(`Better Auth app listening on port ${process.env.PORT}`);
 });
