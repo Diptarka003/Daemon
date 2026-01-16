@@ -8,7 +8,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:3000", // Replace with your frontend's origin
+    origin: "http://daemon-web-two.vercel.app", // Replace with your frontend's origin
     methods: ["GET", "POST", "PUT", "DELETE"], // Specify allowed HTTP methods
     credentials: true, // Allow credentials (cookies, authorization headers, etc.)
   })
@@ -21,7 +21,7 @@ app.use(express.json());
 
 app.get("/device", async (req, res) => {
   const { user_code } = req.query; // Fixed: should be req.query, not req.params
-  res.redirect(`http://localhost:3000/device?user_code=${user_code}`);
+  res.redirect(`http://daemon-web-two.vercel.app/device?user_code=${user_code}`);
 });
 app.listen(process.env.PORT, () => {
     console.log(`Better Auth app listening on port ${process.env.PORT}`);
