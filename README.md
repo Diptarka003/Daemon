@@ -34,7 +34,6 @@
 | 🔐 **Secure Authentication** | GitHub OAuth (Web) + Device authorization (CLI) |
 | 🧠 **Persistent Memory** | PostgreSQL-backed conversation history |
 | ⚙️ **Modular Architecture** | Extensible CLI design |
-| ☁️ **Cloud Deployed** | Backend & client on Vercel |
 
 ---
 
