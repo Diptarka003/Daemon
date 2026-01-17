@@ -270,19 +270,6 @@ daemon wakeup
 | 🛠️ **Tool calling mode** | Execute structured commands |
 | 🤖 **Agent mode** | Application generator |
 
----
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
----
 
 <div align="center">
 
